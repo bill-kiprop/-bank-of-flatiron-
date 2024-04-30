@@ -1,7 +1,7 @@
 import React from 'react'
 import Tabledata from './tableData'
 
-// import  from './data'
+
 
 export default function TransactionsTable({transactions}) {
   const transTable = transactions.map((transacts) => {

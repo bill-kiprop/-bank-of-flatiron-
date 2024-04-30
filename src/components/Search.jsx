@@ -6,13 +6,13 @@ export default function Search({ transactions, setFilteredTransactions }) {
   const handleSearch = (event) => {
     const query = event.target.value.toLowerCase();
     setSearchQuery(query);
-    // Filter transactions based on description or category containing the search query
+    
     const filteredTransactions = transactions.filter(
       (transaction) =>
         transaction.description.toLowerCase().includes(query) ||
         transaction.category.toLowerCase().includes(query)
     );
-    // Update the filtered transactions in the parent component
+    
     setFilteredTransactions(filteredTransactions);
   };
 
